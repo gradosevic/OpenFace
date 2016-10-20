@@ -1,7 +1,7 @@
 # OpenFace
 Face recognition solution that can be used as a REST web service. Send requests to a web service for face recognition and receive a JSON response.
 
-This is a wrapper for [cmusatyalab/openface](https://github.com/cmusatyalab/openface) Docker solution. It contains scripts for automatic environment setup and startup.
+This is a wrapper for [cmusatyalab/openface](https://github.com/cmusatyalab/openface) Docker solution. It contains scripts for automatic environment setup and startup. This project was created in order to start quickly using OpenFace - face recognition features and gives you the flexibility to integrate it with any existing project that can consume the REST service. The setup should hopefully be much easier and automated, comparing to the original project.
 
 # Requirements
 - Docker installed on Windows, Mac or Linux
@@ -28,6 +28,7 @@ The "start" scripts downloads the Docker image and starts the new container if i
 - Open http://localhost:8080 on your host machine
 - Run demo http://localhost:8080/?test=test/*&with=known/*
 - You should receive a JSON response after few moments
+- Add new folders with images to /app/images/ to test your own images
 
 # Parameters
 Use these parameters in your URL
@@ -51,6 +52,7 @@ Use these parameters in your URL
 # More information
 ---
 
++ Original demo: http://cmusatyalab.github.io/openface/demo-2-comparison/
 + Website: http://cmusatyalab.github.io/openface/
 + [API Documentation](http://openface-api.readthedocs.org/en/latest/index.html)
 
