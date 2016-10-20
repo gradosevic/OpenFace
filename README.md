@@ -32,9 +32,9 @@ The "start" scripts downloads the Docker image and starts the new container if i
 # Parameters
 Use these parameters in your URL
 - <b>test</b> - folder with images that should be tested
- - Examples: test/*, test/image1.jpg, test/ima* 
+ - Examples: test/***, test/image1.jpg, test/ima* 
 - <b>with</b> - test images from previous folder with images in this folder (can be the same folder)
-Examples: folder2/*, folder2/image2.jpg, test/image.*
+Examples: folder2/*, folder2/image2.jpg, test/image.**
 
 # More information
 ---
