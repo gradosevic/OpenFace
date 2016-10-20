@@ -1,5 +1,5 @@
 # OpenFace
-Face recognition solution that can be used as a REST web service
+Face recognition solution that can be used as a REST web service. Send requests to a web service for face recognition and receive a JSON response.
 
 This is a wrapper for [cmusatyalab/openface](https://github.com/cmusatyalab/openface) Docker solution. It contains scripts for automatic environment setup and startup.
 
@@ -26,7 +26,15 @@ The "start" scripts downloads the Docker image and starts the new container if i
 # How to use
 - Run start.bat (Windows) or start.sh (Mac, Linux)
 - Open http://localhost:8080 on your host machine
-- 
+- Run demo http://localhost:8080/?test=test/*&with=known/*
+- You should receive a JSON response after few moments
+
+# Parameters
+Use these parameters in your URL
+- <b>test</b> - folder with images that should be tested
+Examples: test/*, test/image1.jpg, test/ima* 
+- <b>with</b> - test images from previous folder with images in this folder (can be the same folder)
+Examples: folder2/*, folder2/image2.jpg, test/image.*
 
 # More information
 ---
