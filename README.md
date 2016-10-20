@@ -44,6 +44,9 @@ Use these parameters in your URL
 - <b>callback</b> - When set, script will send a POST request to the provided callback URL. Can be useful to send a request and to get notified when it's done
  - Optional (URL). Default: not set (empty string)
  
+# Important notes
+- Every time "start" script runs, it creates new Docker container. Use "clear" script to clear all previously used Docker containers. You can add this code at the beginning of "start" script to clear up all containers before starting new one.
+ 
 
 # More information
 ---
