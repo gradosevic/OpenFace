@@ -31,10 +31,19 @@ The "start" scripts downloads the Docker image and starts the new container if i
 
 # Parameters
 Use these parameters in your URL
-- <b>test</b> - folder with images that should be tested
- - Examples: test/***, test/image1.jpg, test/ima* 
-- <b>with</b> - test images from previous folder with images in this folder (can be the same folder)
-Examples: folder2/*, folder2/image2.jpg, test/image.**
+- <b>test</b> - Folder with images that should be tested
+ - Required (string). Examples: test/**, test/image1.jpg, test/ima** 
+- <b>with</b> - Test images from previous folder with images in this folder (can be the same folder)
+ - Required (string). Examples: folder2/**, folder2/image2.jpg, test/image.**
+- <b>t</b> - Threshold for matching the images. Can be between 0-4. Images with comparison < 1 are considered as matched
+ - Optional (float). Default: 1
+- <b>skip-matched</b> - If set, when used multiple images in "with" folder, it will skip already matched images in the next iteration.
+ - Optional (boolean). Default: false
+- <b>debug</b> - If set, results will be displayed in readable form, instead of JSON
+ - Optional (boolean). Default: false
+- <b>callback</b> - When set, script will send a POST request to the provided callback URL. Can be useful to send a request and to get notified when it's done
+ - Optional (URL). Default: not set (empty string)
+ 
 
 # More information
 ---
