@@ -1,5 +1,5 @@
 # OpenFace
-Face recognition solution that can be used as a REST web service. Send requests to a web service for face recognition and receive a JSON response.
+Face recognition solution that can be used as a REST web service. Send requests to a web service to check images and receive a JSON response.
 
 This is a wrapper for [cmusatyalab/openface](https://github.com/cmusatyalab/openface) Docker solution. It contains scripts for automatic environment setup and startup. This project was created in order to start quickly using OpenFace - face recognition features and gives you the flexibility to integrate it with any existing project that can consume the REST service. The setup should hopefully be much easier and automated, comparing to the original project.
 
