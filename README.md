@@ -26,7 +26,7 @@ The "start" scripts downloads the Docker image and starts the new container if i
 # How to use
 - Run start.bat (Windows) or start.sh (Mac, Linux)
 - Open http://localhost:8080 on your host machine
-- Run demo <b>http://localhost:8080/?test=test/**&with=known/**</b>
+- Run demo <b>http://localhost:8080/?test=test/***&with=known/***</b>
 - You should receive a JSON response after few moments
 - Add new folders with images to /app/images/ to test your own images
 
