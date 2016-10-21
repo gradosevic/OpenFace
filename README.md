@@ -31,7 +31,7 @@ The "start" scripts downloads the Docker image and starts the new container if i
 - Add new folders with images to /app/images/ to test your own images
 
 # Response
-Response is return in this format:
+Response is returned in this format:
 
 ```
 Array
@@ -43,7 +43,7 @@ Array
 )
 ```
 
-For example, if we send this request *http://localhost:8080/?test=test/*&with=known/*, a response like this will be returned:
+For example, if we send this request *http://localhost:8080/?test=test/**&with=known/***, a response like this will be returned:
 ```
 {
   "clapton-1.jpg": {
