@@ -21,12 +21,12 @@ This is a wrapper for [cmusatyalab/openface](https://github.com/cmusatyalab/open
 - Follow the instructions and resolve potential issues
 
 # How it works
-The "start" scripts downloads the Docker image and starts the new container if it's not already started. Once the Docker container has started, it mounts this folder on host machine to /app folder inside the container. Scripts should run the web server and you should be able to access it on http://localhost:8080. If needed, you can change the port in these scripts to something else.
+The "start" scripts downloads the Docker image and starts the new container if it's not already started. Once the Docker container has started, it mounts this folder on host machine to /app folder inside the container. Script should start the web server and you should be able to access it on <b>http://localhost:8080</b>. If needed, you can change the port in these scripts to something else.
 
 # How to use
 - Run start.bat (Windows) or start.sh (Mac, Linux)
 - Open http://localhost:8080 on your host machine
-- Run demo http://localhost:8080/?test=test/*&with=known/*
+- Run demo <b>http://localhost:8080/?test=test/*&with=known/*</b>
 - You should receive a JSON response after few moments
 - Add new folders with images to /app/images/ to test your own images
 
@@ -75,9 +75,9 @@ images/
 # Parameters
 Use these parameters in your URL
 - <b>test</b> - Folder with images that should be tested
- - Required (string). Examples: test/**, test/image1.jpg, test/ima** 
+ - Required (string). Examples: <b>test/*, test/image1.jpg, test/ima*</b> 
 - <b>with</b> - Test images from previous folder with images in this folder (can be the same folder)
- - Required (string). Examples: folder2/**, folder2/image2.jpg, test/image.**
+ - Required (string). Examples: <b>folder2/*, folder2/image2.jpg, test/image.*</b>
 - <b>t</b> - Threshold for matching the images. Can be between 0-4. Images with comparison < 1 are considered as matched
  - Optional (float). Default: 1
 - <b>skip-matched</b> - If set, when used multiple images in "with" folder, it will skip already matched images in the next iteration.
