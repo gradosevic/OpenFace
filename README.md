@@ -30,6 +30,48 @@ The "start" scripts downloads the Docker image and starts the new container if i
 - You should receive a JSON response after few moments
 - Add new folders with images to /app/images/ to test your own images
 
+# Response
+Response is return in this format:
+
+```
+Array
+(
+    [<baseline_image>] => Array
+        (
+            [<testing_image>] => <probability>
+        )
+)
+```
+
+For example, if we send this request *http://localhost:8080/?test=test/*&with=known/*, a response like this will be returned:
+```
+{
+  "clapton-1.jpg": {
+    "clapton-2.jpg": 0.318
+  },
+  "lennon-1.jpg": {
+    "lennon-2.jpg": 0.763
+  }
+}
+```
+
+This is the folders structure for the example:
+
+```
+images/
+-- known/
+---- clapton-1.jpg
+---- lennon-1.jpg
+-- test/
+---- adams.jpg
+---- carell.jpg
+---- clapton-2.jpg
+---- lennon-2.jpg
+---- longoria-cooper.jpg
+```
+
+
+
 # Parameters
 Use these parameters in your URL
 - <b>test</b> - Folder with images that should be tested
