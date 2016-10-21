@@ -36,7 +36,7 @@ Response is returned in this format:
 ```
 Array
 (
-    [<baseline_image>] => Array
+    [<known_image>] => Array
         (
             [<testing_image>] => <probability>
         )
@@ -70,6 +70,7 @@ images/
 ---- longoria-cooper.jpg
 ```
 
+It is possible to use the same folder for both parameters. In that case it will test every image with another and return the matching results of comparison.
 
 
 # Parameters
