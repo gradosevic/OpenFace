@@ -43,7 +43,7 @@ Array
 )
 ```
 
-For example, if we send this request *http://localhost:8080/?test=test/**&with=known/**, a response like this will be returned:
+For example, if we send this request <b>http://localhost:8080/?test=test/*&with=known/*</b>, a response like this will be returned:
 ```
 {
   "clapton-1.jpg": {
