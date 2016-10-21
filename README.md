@@ -26,7 +26,7 @@ The "start" scripts downloads the Docker image and starts the new container if i
 # How to use
 - Run start.bat (Windows) or start.sh (Mac, Linux)
 - Open http://localhost:8080 on your host machine
-- Run demo <b>http://localhost:8080/?test=test/***&with=known/***</b>
+- Run demo <b>http://localhost:8080/?test=test/&ast;&with=known/&ast;</b>
 - You should receive a JSON response after few moments
 - Add new folders with images to /app/images/ to test your own images
 
@@ -43,7 +43,7 @@ Array
 )
 ```
 
-For example, if we send this request <b>http://localhost:8080/?test=test/**&with=known/**</b>, a response like this will be returned:
+For example, if we send this request <b>http://localhost:8080/?test=test/&ast;&with=known/&ast;</b>, a response like this will be returned:
 ```
 {
   "clapton-1.jpg": {
@@ -75,9 +75,9 @@ images/
 # Parameters
 Use these parameters in your URL
 - <b>test</b> - Folder with images that should be tested
- - Required (string). Examples: <b>test/**, test/image1.jpg, test/ima**</b> 
+ - Required (string). Examples: <b>test/&ast;, test/image1.jpg, test/ima&ast;</b> 
 - <b>with</b> - Test images from previous folder with images in this folder (can be the same folder)
- - Required (string). Examples: <b>folder2/**, folder2/image2.jpg, test/image.**</b>
+ - Required (string). Examples: <b>folder2/&ast;, folder2/image2.jpg, test/image.&ast;</b>
 - <b>t</b> - Threshold for matching the images. Can be between 0-4. Images with comparison < 1 are considered as matched
  - Optional (float). Default: 1
 - <b>skip-matched</b> - If set, when used multiple images in "with" folder, it will skip already matched images in the next iteration.
